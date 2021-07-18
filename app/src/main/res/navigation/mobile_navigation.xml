@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="io.github.pronze.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="io.github.pronze.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="io.github.pronze.ui.notifications.ProfileFragment"
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile"
+        />
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="io.github.pronze.ui.quiz.QuizFragment"
+        android:label="@string/quiz_title"
+        tools:layout="@layout/fragment_quiz"
+        />
+
+    <fragment
+        android:id="@+id/navigation_performance"
+        android:name="io.github.pronze.ui.performance.PerformanceFragment"
+        android:label="@string/performance_title"
+        tools:layout="@layout/fragment_performance"/>
+
+</navigation>

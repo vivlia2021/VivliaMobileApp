@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+
+    <ProgressBar
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="@id/image"
+        app:layout_constraintRight_toRightOf="@id/image"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"
+        android:secondaryProgressTint="@android:color/darker_gray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:text="Book description"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
